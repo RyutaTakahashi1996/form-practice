@@ -32,12 +32,11 @@
               <input class="input_area" id="given_name" type="text" name="name" autocomplete="given-name" required>
             </div>
             <div class="label_section">
-              <label class="label_text">生年月日
-                <span class="required">※</span>
-              </label>
+              <p class="label_text">生年月日 <span class="required">※</span></p>
               <div class="select_area is_flex">
                 <div class="select_unit">
-                  <select class="input_area" name="year">
+                  <label for="birth_year" class="visually-hidden">年</label>
+                  <select class="input_area" name="year" id="birth_year">
                     <option value="" disabled selected>年</option>
                     <option value="">2000</option>
                     <option value="">2001</option>
@@ -53,7 +52,8 @@
                   </select>
                 </div>
                 <div class="select_unit">
-                  <select class="input_area" name="month">
+                  <label for="birth_month" class="visually-hidden">月</label>
+                  <select class="input_area" name="month" id="birth_month">
                     <option value="" disabled selected>月</option>
                     <option value="">1</option>
                     <option value="">2</option>
@@ -70,7 +70,8 @@
                   </select>
                 </div>
                 <div class="select_unit">
-                  <select class="input_area" name="day">
+                  <label for="birth_day" class="visually-hidden">日</label>
+                  <select class="input_area" name="day" id="birth_day">
                     <option value="" disabled selected>日</option>
                     <option value="">1</option>
                     <option value="">2</option>
